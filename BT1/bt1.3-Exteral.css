@@ -1,0 +1,12 @@
+body {
+    background-color: Lightgray;
+  }
+  #hoten {
+    color: red;
+  }
+  label {
+    font-weight: bold;
+  }
+  .Sothich{
+      color: blue;
+  }

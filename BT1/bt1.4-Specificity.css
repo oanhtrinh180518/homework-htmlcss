@@ -1,0 +1,25 @@
+body {
+  background-color: Lightgray;
+}
+h1{
+  background-color: blue;
+  background-color: brown;
+}
+#hoten {
+  color: red;
+}
+label {
+  font-weight: bold;
+}
+.Sothich{
+  color: blue;
+}
+#lb_dulich{
+  color:green;
+}
+div{
+  background-color: antiquewhite;
+}
+.gioitinh{
+  background-color: burlywood;
+}

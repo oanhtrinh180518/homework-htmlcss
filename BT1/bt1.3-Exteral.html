@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href="bt1.3-Exteral.css">
+  </head>
+  <body>
+    <h2>Đây là phiếu khảo sát thông tin</h2>
+    <h3>Quy tắc:</h3>
+    <ol>
+      <li>Điền đúng tên và mật khẩu</li>
+      <li>Chỉ chọn một giới tính</li>
+      <li>Có thể chọn nhiều sở thích</li>
+    </ol>
+    <form action="/action_page.php">
+      <label>Nhập họ và tên</label><br />
+      <input type="text" id="name" name="name" value="Họ và tên" /><br /><br />
+
+      <label>Nhập mật khấu</label><br />
+      <input type="password" id="password" name="password" value="" />
+      <br /><br />
+
+      <label>Giới tính:</label><br />
+      <label>Nữ</label>
+      <input type="radio" id="nu" name="gioitinh" value="nu" />
+      <label>Nam:</label>
+      <input type="radio" id="nam" name="gioitinh" value="nam" />
+      <label>Khac</label>
+      <input type="radio" id="khac" name="gioitinh" value="khac" /><br />
+
+      <br />
+      <div class="Sothich">
+        <label>Sở thích:</label><br />
+        <label>Du lịch</label>
+        <input type="checkbox" id="Dulich" name="Dulich" value="Dulich" /><br />
+        <label>Từ thiện</label>
+        <input
+          type="checkbox"
+          id="TuThien"
+          name="TuThien"
+          value="TuThien"
+        /><br />
+      </div>
+
+      <label>Phát triển bản thân</label>
+      <input type="checkbox" id="ptbt" name="ptbt" value="ptbt" /><br />
+
+      <br />
+      <input type="submit" value="submit" /><br />
+    </form>
+
+    <h2>Danh sách những người đã điền khảo sát</h2>
+    <table>
+      <tr>
+        <th>STT</th>
+        <th>Họ và tên</th>
+        <th>Giới tính</th>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td>Oanh</td>
+        <td>Nu</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>Thu</td>
+        <td>Nu</td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td>Hai</td>
+        <td>Nam</td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+.a1 {
+  position: relative;
+  width: 1000px;
+  height: 2000px;
+  top: 0px;
+  border: 3px solid royalblue;
+}
+.a2 {
+  position: fixed;
+  top: 50px;
+  width: 100px;
+  height: 200px;
+  border: 3px solid #73ad21;
+}
+.a3 {
+  position: fixed;
+  bottom: 0px;
+  width: 100px;
+  height: 50px;
+  border: 3px solid #73ad21;
+}
+.a4 {
+  position: absolute;
+  width: 700px;
+  height: 350px;
+  border: 3px solid red;
+  left: 4px;
+  top: 200px;
+  
+}
+.a5 {
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  border: 3px solid rgb(33, 85, 100);
+  left: 200px;
+  top: 250px;
+  
+}
