@@ -1,4 +1,3 @@
-<!--Sticky: chỉ bám dính trên thành phần cha của nó-->
 <!DOCTYPE html>
 <html>
 
@@ -10,13 +9,7 @@
     <div class="a1">
 
         <div class="a2">A2
-            <!-- <div class="a4">A4</div> -->
-
         </div>
-        <!-- <div class="relative">relative
-            <div class='absolute'>Absolute</div>
-            <div class="sticky">Sticky</div>
-        </div> -->
         <div class="a4">
             A4
             <div class="a5">A5</div>
@@ -25,10 +18,13 @@
     </div>
 
     <div class="a3">A3</div>
-    <!-- <div class="a6"></div> -->
 </body>
 
 </html>
 <!--
-   A1: màu đỏ
- -->
+a1 xác định theo vị trí nên dùng relative
+a2,a3 không di chuyển khi cuộn nên dùng fixed
+a4 cuộn theo a1 nên dùng absolute (chạy theo góc của cha)
+a5 cuộn khi khoảng cách bottom a5 và bottom  a4 là 0 nên dùng sticky
+a6 luôn nằm giữa a4, sẽ cuộn khi a4 cuộn nên dùng absolute
+-->
