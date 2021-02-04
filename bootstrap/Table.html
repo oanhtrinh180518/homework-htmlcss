@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Basic Bootstrap Table</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="table.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Basic Bootstrap Table</h2>
+      <table
+        class="table table-info table-striped table-borderless table-hover"
+      >
+        <thead class="table-primary">
+          <tr>
+            <th>No</th>
+            <th>Language</th>
+            <th>Percent</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td class="table-danger">Java</td>
+            <td>14.21%</td>
+          </tr>
+          <tr class="table-md">
+            <td>2</td>
+            <td>C</td>
+            <td>11.03%</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>C++</td>
+            <td>5.60%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <table class="table table-bordered">
+      <thead class='thead-dark'>
+        <tr class="d-flex">
+          <th class="col-3 col-sm-1">No</th>
+          <th class="col-3 col-sm-9">Language</th>
+          <th class="col-6 col-sm-2">Percent</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="d-flex">
+          <td class="col-3 col-sm-1">1</td>
+          <td class="col-3 col-sm-9">Java</td>
+          <td class="col-6 col-sm-2">14.21%</td>
+        </tr>
+        <tr class="d-flex">
+          <td class="col-3 col-sm-1">2</td>
+          <td class="col-3 col-sm-9">C</td>
+          <td class="col-6 col-sm-2">11.03%</td>
+        </tr>
+        <tr class="d-flex">
+          <td class="col-3 col-sm-1">3</td>
+          <td class="col-3 col-sm-9">D</td>
+          <td class="col-6 col-sm-2">11.03%</td>
+        </tr>
+        <tr class="d-flex">
+          <td class="col-3 col-sm-1">4</td>
+          <td class="col-3 col-sm-9">D</td>
+          <td class="col-6 col-sm-2">11.03%</td>
+        </tr>
+        <tr class="d-flex">
+          <td class="col-3 col-sm-1">5</td>
+          <td class="col-3 col-sm-9">E</td>
+          <td class="col-6 col-sm-2">11.03%</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

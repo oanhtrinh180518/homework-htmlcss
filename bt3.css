@@ -1,11 +1,31 @@
 li {
     height: 30px;
-    width: 200px;
-    border: 3px solid rgb(97, 70, 70);
+    border: 3px solid rgb(114, 158, 96);
+    margin: 3px;
+    list-style: none;
+    text-align: center;
 }
 
 @media only screen and (max-width: 600px) and (max-height:300px) {
     li {
         border: 3px solid rgb(37, 201, 152);
     }
+}
+
+.le {
+    background-color: rgb(170, 127, 127);
+}
+
+.chan {
+    background-color: rgb(92, 92, 241);
+}
+
+span {
+    display: inline-block;
+    height: 30px;
+    width: 50px;
+    border: 3px solid rgb(114, 158, 96);
+    margin: 3px;
+    list-style: none;
+    text-align: center;
 }
