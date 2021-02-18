@@ -1,0 +1,50 @@
+input {
+    /* display: inline-block;
+    margin: 15px;
+    margin-left: 5px; */
+    border: 0px outset gray;
+    border: none;
+}
+
+.login {
+    text-align: center;
+}
+
+.btnLogin {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.aForgot {
+    color: gray;
+}
+
+.divFor {
+    background-color: rgb(206, 198, 198);
+}
+
+.divFor2 {
+    display: none;
+}
+
+#lbBatbuoc1,
+#lbBatbuoc2 {
+    padding-left: 8px;
+    color: red;
+}
+
+.input {
+    /* border: 1px solid gray; */
+}
+
+.username,
+.password {
+    border: 1px solid rgb(173, 168, 168);
+    border-radius: 5px;
+}
+
+.divImg,
+#username,
+#myPassword {
+    border: none;
+}

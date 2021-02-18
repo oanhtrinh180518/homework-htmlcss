@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bt56.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src='bt56.js'></script>
+    <script>
+    </script>
+</head>
+
+<body>
+    <!-- Button để mở Modal -->
+    <button id='btnLoginSystem' type="button" class="btn btn-primary" data-toggle="modal" data-target="#myLogin" onclick='clickLoginSystem()'>
+      Đăng nhập hệ thống
+    </button>
+
+    <!-- Form Login -->
+    <form>
+
+        <div class="modal" id="myLogin">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                        <!-- data-dismiss: đóng hộp thoại -->
+              &times;
+            </button>
+                    </div>
+                    <h4 class="text-center">Member Login</h4>
+
+                    <div class="modal-body">
+                        <div class="container-fluid mt-3">
+                            <div class="form-group">
+                                <div class=" input-group-prepend username">
+                                    <div class="input-group-text divImg">
+                                        <img src='username.png' width="15px" height="15px">
+                                    </div>
+                                    <input type="username" id="username" class="form-control" placeholder="Username" />
+                                </div>
+                                <div class=" input-group-prepend password">
+                                    <div class="input-group-text divImg">
+                                        <img src='password.jpg' width="15px" height="15px">
+                                    </div>
+                                    <input type="password" id="myPassword" class="form-control" placeholder="Password" />
+                                </div>
+                                <label id='lbBatbuoc1'></label>
+                                <button type="button" class="btn btn-success btn-block" id='idLogin' onclick='clickLogin()'>Login</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='modal-footer'>
+
+                        <br/>
+                        <div class="btn btn-block divFor">
+                            <a href="#" id='aForgot' class="aForgot" data-toggle="modal" data-target="#myForgotPass" data-dismiss="modal"> Forgot Password </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!-- Form Forgot Password -->
+    <div class="modal" id="myForgotPass">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+                </div>
+                <h4 class="text-center"> Forgot Password</h4>
+                <div class="modal-body">
+                    <div class="container-fluid mt-3">
+                        <form id='idForm'>
+                            <div class="form-group">
+                                <input type="text" id="username2" class="form-control" placeholder="username" />
+                                <input type="password" id="newPassword" class="form-control" placeholder="NewPassword" />
+                                <label id='lbBatbuoc2'></label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class='modal-footer'>
+                    <button type="button" class="btn btn-success btn-block" id='idSavePass' onclick="clickSavePass()" value="true">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -6,6 +6,16 @@ li {
     text-align: center;
 }
 
+li:nth-child(even),
+span:nth-child(even) {
+    background-color: rgb(101, 101, 224);
+}
+
+li:nth-child(odd),
+span:nth-child(odd) {
+    background-color: rgb(252, 86, 108);
+}
+
 @media only screen and (max-width: 600px) and (max-height:300px) {
     li {
         border: 3px solid rgb(37, 201, 152);
