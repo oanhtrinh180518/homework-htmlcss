@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="login.css"
+      <link
+      rel="stylesheet"
+      href="table.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#idLogin').click(function(){
+          $('#idLogin').text('Loading')
+        })
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Button to Open the Modal -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#myModal"
+    >
+      Login
+    </button>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <!-- Modal body -->
+          <h4 class="text-center">Member Login</h4>
+          <div class="modal-body">
+            <div class="container-fluid mt-3">
+              <form>
+                <!-- Vertical -->
+                <div class="form-group">
+                  <input
+                    type="username"
+                    id="username"
+                    class="form-control"
+                    placeholder="Username"
+                  />
+                  <input
+                    type="password"
+                    id="myPassword"
+                    class="form-control"
+                    placeholder="Password"
+                  />
+                  <button
+                    type="submit"
+                    class="btn btn-success btn-block"
+                    id='idLogin'
+                  >
+                    Login
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="btn btn-block divFor">
+            <a href="#" class="aForgot"> Forgot Password </a>
+          </div>
+          <!-- Modal footer -->
+          <!--<div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Login
+            </button>
+          </div>-->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
